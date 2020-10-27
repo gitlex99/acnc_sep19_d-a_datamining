@@ -25,41 +25,44 @@ acncRaw=open("datadotgov_main.txt")
 # Data headings (tab separated):
 headerRaw="ABN	Charity_Legal_Name	Other_Organisation_Names	Address_Type	Address_Line_1	Address_Line_2	Address_Line_3	Town_City	State	Postcode	Country	Charity_Website	Registration_Date	Date_Organisation_Established	Charity_Size	Number_of_Responsible_Persons	Financial_Year_End	Operates_in_ACT	Operates_in_NSW	Operates_in_NT	Operates_in_QLD	Operates_in_SA	Operates_in_TAS	Operates_in_VIC	Operates_in_WA	Operating_Countries	PBI	HPC	Preventing_or_relieving_suffering_of_animals	Advancing_Culture	Advancing_Education	Advancing_Health	Promote_or_oppose_a_change_to_law__government_poll_or_prac	Advancing_natual_environment	Promoting_or_protecting_human_rights	Purposes_beneficial_to_ther_general_public_and_other_analogous	Promoting_reconciliation__mutual_respect_and_tolerance	Advancing_Religion	Advancing_social_or_public_welfare	Advancing_security_or_safety_of_Australia_or_Australian_public	Aboriginal_or_TSI	Adults	Aged_Persons	Children	Communities_Overseas	Early_Childhood	Ethnic_Groups	Families	Females	Financially_Disadvantaged	Gay_Lesbian_Bisexual	General_Community_in_Australia	Males	Migrants_Refugees_or_Asylum_Seekers	Other_Beneficiaries	Other_Charities	People_at_risk_of_homelessness	People_with_Chronic_Illness	People_with_Disabilities	Pre_Post_Release_Offenders	Rural_Regional_Remote_Communities	Unemployed_Person"
 
-#Columns and 2-letter string codes for analysis, this is done since charities can perform activities in multiple areas (columns)
-charityTypeCode1="RA" # Preventing_or_relieving_suffering_of_animals
-charityTypeCode2="AC" # Advancing_Culture
-charityTypeCode3="AE" # Advancing_Education
-charityTypeCode4="AH" # Advancing_Health
-charityTypeCode5="CL" # Promote_or_oppose_a_change_to_law__government_poll_or_prac
-charityTypeCode6="NE" # Advancing_natual_environment
-charityTypeCode7="HR" # Promoting_or_protecting_human_rights
-charityTypeCode8="GP" # Purposes_beneficial_to_ther_general_public_and_other_analogous
-charityTypeCode9="RC" # Promoting_reconciliation__mutual_respect_and_tolerance
-charityTypeCode10="AR" # Advancing_Religion
-charityTypeCode11="PW" # Advancing_social_or_public_welfare
-charityTypeCode12="SC" # Advancing_security_or_safety_of_Australia_or_Australian_public
-charityTypeCode13="AT" # Aboriginal_or_TSI
-charityTypeCode14="AD" # Adults
-charityTypeCode15="AP" # Aged_Persons
-charityTypeCode16="CH" # Children
-charityTypeCode17="CO" # Communities_Overseas
-charityTypeCode18="EC" # Early_Childhood
-charityTypeCode19="EG" # Ethnic_Groups
-charityTypeCode20="FL" # Families
-charityTypeCode21="FE" # Females
-charityTypeCode22="FD" # Financially_Disadvantaged
-charityTypeCode23="GL" # Gay_Lesbian_Bisexual
-charityTypeCode24="GC" # General_Community_in_Australia
-charityTypeCode25="MA" # Males
-charityTypeCode26="MR" # Migrants_Refugees_or_Asylum_Seekers
-charityTypeCode27="OB" # Other_Beneficiaries
-charityTypeCode28="OC" # Other_Charities
-charityTypeCode29="HM" # People_at_risk_of_homelessness
-charityTypeCode30="CR" # People_with_Chronic_Illness
-charityTypeCode31="DS" # People_with_Disabilities
-charityTypeCode32="OF" # Pre_Post_Release_Offenders
-charityTypeCode33="RR" # Rural_Regional_Remote_Communities
-charityTypeCode34="UN" # Unemployed_Person
+#Columns and 2-letter string codes for analysis, this is done since charities can perform activities in multiple areas (columns).
+#This is done so that the program will create a FINGERPRINT for analysis (simplify analysis by avoid indexation boolean format ).
+#          i.e. a FINGERPRINT of a large Charity that is Advancing Education & Health is formatted as: ScaleTypecode_Typcode_Typecode... ==> 3AE_AH_.
+#          i.e. a FINGERPRINT of a small Charity to preven animal suffering, advance natural environment and oppose change of law ==> 1RA_NE_CL_
+charityTypeCode1="RA_" # Preventing_or_relieving_suffering_of_animals
+charityTypeCode2="AC_" # Advancing_Culture
+charityTypeCode3="AE_" # Advancing_Education
+charityTypeCode4="AH_" # Advancing_Health
+charityTypeCode5="CL_" # Promote_or_oppose_a_change_to_law__government_poll_or_prac
+charityTypeCode6="NE_" # Advancing_natual_environment
+charityTypeCode7="HR_" # Promoting_or_protecting_human_rights
+charityTypeCode8="GP_" # Purposes_beneficial_to_ther_general_public_and_other_analogous
+charityTypeCode9="RC_" # Promoting_reconciliation__mutual_respect_and_tolerance
+charityTypeCode10="AR_" # Advancing_Religion
+charityTypeCode11="PW_" # Advancing_social_or_public_welfare
+charityTypeCode12="SC_" # Advancing_security_or_safety_of_Australia_or_Australian_public
+charityTypeCode13="AT_" # Aboriginal_or_TSI
+charityTypeCode14="AD_" # Adults
+charityTypeCode15="AP_" # Aged_Persons
+charityTypeCode16="CH_" # Children
+charityTypeCode17="CO_" # Communities_Overseas
+charityTypeCode18="EC_" # Early_Childhood
+charityTypeCode19="EG_" # Ethnic_Groups
+charityTypeCode20="FL_" # Families
+charityTypeCode21="FE_" # Females
+charityTypeCode22="FD_" # Financially_Disadvantaged
+charityTypeCode23="GL_" # Gay_Lesbian_Bisexual
+charityTypeCode24="GC_" # General_Community_in_Australia
+charityTypeCode25="MA_" # Males
+charityTypeCode26="MR_" # Migrants_Refugees_or_Asylum_Seekers
+charityTypeCode27="OB_" # Other_Beneficiaries
+charityTypeCode28="OC_" # Other_Charities
+charityTypeCode29="HM_" # People_at_risk_of_homelessness
+charityTypeCode30="CR_" # People_with_Chronic_Illness
+charityTypeCode31="DS_" # People_with_Disabilities
+charityTypeCode32="OF_" # Pre_Post_Release_Offenders
+charityTypeCode33="RR_" # Rural_Regional_Remote_Communities
+charityTypeCode34="UN_" # Unemployed_Person
 
 
 organisationListNames=[]

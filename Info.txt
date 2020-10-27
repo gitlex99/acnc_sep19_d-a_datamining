@@ -1,0 +1,2 @@
+Questions:
+Which charity section has the most financial resources (classifying scales into numerical values; small=1, med=2, large=3)

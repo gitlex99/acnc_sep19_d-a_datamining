@@ -1,3 +1,11 @@
+"""
+Program: data preprocessing
+Processes:
+    Normalise organisation attributes for python analysis.
+    Normalise organisation attributes/identifiers for Rattle/R analysis.
+Input: Data.gov ACNC September 2020 data.
+Output: normalised/clean data (file) for further analysis.
+"""
 import matplotlib.pyplot as plt
 
 #TODO: By Lex Bustillo. Last updated: 07/10/2020

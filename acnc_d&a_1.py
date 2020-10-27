@@ -5,6 +5,8 @@ Processes:
     Normalise organisation attributes/identifiers for Rattle/R analysis.
 Input: Data.gov ACNC September 2020 data.
 Output: normalised/clean data (file) for further analysis.
+Expected output: evidence-based and actionable actions/insights in regards to what high-performing (in regards to scale and outreach) in the charity environment.
+                 Undestand if certain charity sectors/competitors/individual organisations/traits improve funding models (scale: small, medium, large).
 """
 import matplotlib.pyplot as plt
 

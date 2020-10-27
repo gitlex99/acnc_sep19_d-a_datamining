@@ -4,6 +4,7 @@ Processes:
             * Normalise organisation attributes for python analysis.
             * Normalise organisation attributes/identifiers for Rattle/R analysis.
             * Potential scope for integration if another dataset that has an ABN attribute.
+            * Data logging (hopefully done with a menu-report-making functionality).
 Input: Data.gov ACNC September 2020 data.
 Output: normalised/clean data (file) for further analysis.
 Expected output: evidence-based and actionable actions/insights in regards to what high-performing (in regards to scale and outreach) in the charity environment.

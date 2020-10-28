@@ -7,3 +7,5 @@ Questions (mostly focused of scale of charity):
 * Does the number of directors/responsible persons affect the scale of a charity?
 * Does the age of the charity affect the scale (or other attributes) of a charity?
 * Are there any charity service gaps affecting certain regions, demographics or communities?
+* Are there any data quality issues?
+* If a charity works at a certain area, does it influence other sub-areas it works on as well (dependencies)?

@@ -1,3 +1,5 @@
+The program is intended to discover new knowledge and insights to (hopefully) help make evidence-based actions/strategies, with particular interest in the Australian charity sector.
+
 Questions (mostly focused of scale of charity):
 * Which charity section tend to have more financial resources? (classifying scales into numerical values; small=1, med=2, large=3)
 * Which region has more charity (exclusive)?

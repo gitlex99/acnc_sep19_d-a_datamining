@@ -1,2 +1,7 @@
-Questions:
-Which charity section has the most financial resources (classifying scales into numerical values; small=1, med=2, large=3)
+Questions (mostly focused of scale of charity):
+* Which charity section tend to have more financial resources? (classifying scales into numerical values; small=1, med=2, large=3)
+* Which region has more charity (exclusive)?
+* Does a charity's region affect/influence the scale of the charity?
+* Does the number of directors/responsible persons affect the scale of a charity?
+* Does the age of the charity affect the scale (or other attributes) of a charity?
+* Are there any charity service gaps affecting certain regions, demographics or communities?
